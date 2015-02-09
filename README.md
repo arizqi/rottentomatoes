@@ -25,7 +25,7 @@ Time spent: 12
 - [ ] Add a search bar: pretty simple implementation of searching against the existing table view data.
 
 ### Walkthrough
-![alt tag](https://github.com/arizqi/rottentomatoes/blob/master/rottentomatoes.gif)
+![alt tag](https://raw.githubusercontent.com/arizqi/rottentomatoes/master/rottentomatoes.gif)
 
 Credits
 ---------
