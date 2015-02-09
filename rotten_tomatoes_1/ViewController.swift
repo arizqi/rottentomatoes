@@ -125,9 +125,17 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                 
             }
             
+            var critRating = ""
+            if ratings["critics_score"]! as Int == -1 {
+                critRating = "N/A"
+            }
+            else {
+                critRating = String(ratings["critics_score"]! as Int)
+            }
+            
             detailVC.movieTitle = yoMovieTitle
             detailVC.posterUrl = NSURL(string: highResUrl)
-            detailVC.criticsScore = String(ratings["critics_score"]! as Int)
+            detailVC.criticsScore = critRating
             detailVC.audienceScore = String(ratings["audience_score"]! as Int)
             detailVC.mpaaRating = mpaa
             detailVC.year = year
